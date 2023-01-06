@@ -1,0 +1,172 @@
+:root {
+    --main-color: dodgerblue;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, emoji;
+}
+.container {
+    width: 22%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main {
+    filter: drop-shadow(0 0 3px grey);
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.colors {
+    filter: drop-shadow(0 0 3px grey);
+    width: 100%;
+    height: 13%;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.colors div {
+    cursor: pointer;
+    width: 7%;
+    height: 30%;
+    border-radius: 100%;
+    border: 1px lightskyblue solid;
+    transition: 0.2s;
+}
+.colors div:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.color1 {
+    background-color: dodgerblue;
+}
+.color2 {
+    background-color: deeppink;
+}
+.color3 {
+    background-color: springgreen;
+}
+.color4 {
+    background-color: blueviolet;
+}
+.color5 {
+    background-color: orange;
+}
+.header-main-color {
+    width: 100%;
+    background-color: var(--main-color);
+    height: 25%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.profile {
+    position: absolute;
+    width: 30.5%;
+    height: 24%;
+    top: calc(25% - 11% - 2.5px);
+    left: calc(50% - 15% - 2.5px);
+    border-radius: 100%;
+    border: 5px solid white;
+    transition: 0.5s;
+}
+.profile:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.info {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.bio {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bio pre:nth-child(3) {
+    font-size: 1.1rem;
+}
+.name {
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+.follower-following {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+.follower-following div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.follower-following div pre:nth-child(2) {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+.btns {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    width: 30%;
+    height: 45%;
+    transition: 0.3s;
+
+}
+button:hover {
+    opacity: 70%;
+    transform: scaleX(1.05);
+    transition: 0.3s;
+}
+.follow-btn {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.message-btn {
+    background-color: white;
+    border: 3px var(--main-color) solid;
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
